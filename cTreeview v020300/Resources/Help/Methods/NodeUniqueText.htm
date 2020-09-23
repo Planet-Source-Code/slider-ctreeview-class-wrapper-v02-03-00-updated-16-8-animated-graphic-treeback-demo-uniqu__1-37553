@@ -1,0 +1,131 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>NodeUniqueText</title>
+</head>
+
+<body>
+
+<table border="1" width="100%" bgcolor="#000080" bordercolor="#000080" bordercolorlight="#000080" bordercolordark="#000080">
+  <tr>
+    <td width="100%"><font color="#FFFFFF" size="5" face="Tahoma"><b>NodeUniqueText</b>
+      Method</font></td>
+  </tr>
+</table>
+<p><font size="2" face="Tahoma">Returns unique text based on parameters passed.</font></p>
+<p><b><font size="2" face="Tahoma">Syntax</font></b></p>
+<p><font face="Tahoma" size="2"><i>object</i>.<b>NodeUniqueText</b><b>(</b><i>Node,
+NewText, CompareMethod, PrefixNumberMode, Prefix </i><b>)</b>
+</font></p>
+<p><font size="2" face="Tahoma">The <b>NodeUniqueText </b>Method syntax
+has these parts:</font></p>
+<table border="1" width="99%" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="77">
+  <tr>
+    <th width="11%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Part</font></th>
+    <th width="89%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Description</font></th>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><i><font size="2" face="Tahoma">object</font></i></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font size="2" face="Tahoma">Required.
+      An object expression that evaluates to an object in the Applies To list.</font></td>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font face="Tahoma" size="2"><i>Node</i></font></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">Required.
+      A valid <b> Node</b> (MSComctlLib.Node)
+      object. If an empty <b>Node </b>object is passed, then all of the <b>TreeView</b>
+      control's nodes will be tested.</font></td>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font face="Tahoma" size="2"><i>Text</i></font></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">Required.
+      The text to test and make unique.</font></td>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma"><i>CompareMethod</i></font></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font face="Tahoma" size="2">Optional.
+      Specifies the type of string comparison, as described in settings. If the compare <b>argument</b> is
+      <b>Null</b>, an error occurs.</font></td>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font face="Tahoma" size="2"><i>PrefixNumberMode</i></font></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font face="Tahoma" size="2">Optional.
+      Method of making <i>Text</i>  unique, as described in settings.</font></td>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font face="Tahoma" size="2">Prefix</font></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font face="Tahoma" size="2">Optional.
+      Prefix text (Default = 'Copy of ') if <i>PrefixNumberMode</i> is <i>[PreFix]</i>.</font></td>
+  </tr>
+</table>
+<p><b><font size="2" face="Tahoma">Settings</font></b></p>
+<p><font size="2" face="Tahoma">The settings for <i>CompareMethod operator </i>are:</font></p>
+<table border="1" width="98%" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="77">
+  <tr>
+    <th width="21%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Constant</font></th>
+    <th width="19%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="center" height="16" valign="top"><font size="2" face="Tahoma">Setting</font></th>
+    <th width="60%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Description</font></th>
+  </tr>
+  <tr>
+    <td width="21%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font face="Tahoma" size="2">vbBinaryCompare</font></td>
+    <td width="19%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" align="center" valign="top"><font size="2" face="Tahoma">0</font></td>
+    <td width="60%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font face="Tahoma" size="2">Performs
+      a binary comparison.</font></td>
+  </tr>
+  <tr>
+    <td width="21%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font face="Tahoma" size="2">vbTextCompare</font></td>
+    <td width="19%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" align="center" valign="top"><font size="2" face="Tahoma">1</font></td>
+    <td width="60%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font face="Tahoma" size="2">(Default)
+      Performs
+      a textual comparison.</font></td>
+  </tr>
+</table>
+<p><font size="2" face="Tahoma">The settings for </font><font face="Tahoma" size="2"><i>PrefixNumberMode
+operator</i> are:</font></p>
+<table border="1" width="98%" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="77">
+  <tr>
+    <th width="21%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Constant</font></th>
+    <th width="19%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="center" height="16" valign="top"><font size="2" face="Tahoma">Setting</font></th>
+    <th width="60%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Description</font></th>
+  </tr>
+  <tr>
+    <td width="21%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font face="Tahoma" size="2">[Numbers]</font></td>
+    <td width="19%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" align="center" valign="top"><font size="2" face="Tahoma">0</font></td>
+    <td width="60%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font face="Tahoma" size="2">(Default)
+      Adds braced number to end of <i>Text</i> to generate unique <i>Text</i>.</font></td>
+  </tr>
+  <tr>
+    <td width="21%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font face="Tahoma" size="2">[Prefix]</font></td>
+    <td width="19%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" align="center" valign="top"><font size="2" face="Tahoma">1</font></td>
+    <td width="60%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font face="Tahoma" size="2">Prefixes
+      <i>Prefix</i> text to <i>Text</i> to generate unique <i>Text</i>.</font></td>
+  </tr>
+</table>
+<p><font size="2" face="Tahoma">The settings for <b>NodeUniqueText</b><b> </b>method
+are:</font></p>
+<table border="1" width="98%" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="77">
+  <tr>
+    <th width="9%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Setting</font></th>
+    <th width="70%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Description</font></th>
+  </tr>
+  <tr>
+    <td width="9%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font size="2" face="Tahoma">True</font></td>
+    <td width="70%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font face="Tahoma" size="2">The
+      <i>Text</i> is unique.</font></td>
+  </tr>
+  <tr>
+    <td width="9%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">False</font></td>
+    <td width="70%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font face="Tahoma" size="2">A
+      <b>Node</b> object already has <i>Text</i>.</font></td>
+  </tr>
+</table>
+<p><b><font face="Tahoma" size="2">Remarks</font></b></p>
+<p><b><font face="Tahoma" size="2">Data Type</font></b></p>
+<p><font face="Tahoma" size="2"> String</font></p>
+
+</body>
+
+</html>

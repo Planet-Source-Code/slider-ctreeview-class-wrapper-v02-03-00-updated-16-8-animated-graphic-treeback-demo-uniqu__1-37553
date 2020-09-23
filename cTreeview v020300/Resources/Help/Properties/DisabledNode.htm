@@ -1,0 +1,73 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>DisabledNode</title>
+</head>
+
+<body>
+
+<table borderColor="#000080" borderColorDark="#000080" width="100%" bgColor="#000080" borderColorLight="#000080" border="1">
+  <tbody>
+    <tr>
+      <td width="100%"><font face="Tahoma" color="#ffffff" size="5"><b>DisabledNode</b>
+        Property</font></td>
+    </tr>
+  </tbody>
+</table>
+<p><font face="Tahoma" size="2">Returns a specific <b>Node</b> object of the
+internal cTreeView wrapper Dll/Class DisabledNodes collection, either by index
+or by key.</font></p>
+<p><b><font face="Tahoma" size="2">Syntax</font></b></p>
+<p><font face="Tahoma" size="2"><i>object</i>.<b>DisabledNode(</b><i>index</i><b>)</b></font></p>
+<p><font face="Tahoma" size="2">The <b>DisabledNode</b><b> </b>property syntax
+the following parts:</font></p>
+<table borderColor="#ffffff" height="77" borderColorDark="#ffffff" width="99%" borderColorLight="#ffffff" border="1">
+  <tbody>
+    <tr>
+      <th borderColor="#ffffff" borderColorLight="#808080" align="left" width="11%" bgColor="#c0c0c0" borderColorDark="#ffffff" height="16" valign="top"><font face="Tahoma" size="2">Part</font></th>
+      <th borderColor="#ffffff" borderColorLight="#808080" align="left" width="89%" bgColor="#c0c0c0" borderColorDark="#ffffff" height="16" valign="top"><font face="Tahoma" size="2">Description</font></th>
+    </tr>
+    <tr>
+      <td borderColor="#ffffff" borderColorLight="#ffffff" width="11%" bgColor="#e2e2e2" borderColorDark="#ffffff" height="16" valign="top"><i><font face="Tahoma" size="2">object</font></i></td>
+      <td borderColor="#ffffff" borderColorLight="#ffffff" width="89%" bgColor="#e2e2e2" borderColorDark="#ffffff" height="16" valign="top"><font face="Tahoma" size="2">Required.
+        An object expression that evaluates to an object in the Applies To list.</font></td>
+    </tr>
+    <tr>
+      <td borderColor="#ffffff" borderColorLight="#ffffff" width="11%" bgColor="#e2e2e2" borderColorDark="#ffffff" height="27" valign="top"><i><font face="Tahoma" size="2">index</font></i></td>
+      <td borderColor="#ffffff" borderColorLight="#ffffff" width="89%" bgColor="#e2e2e2" borderColorDark="#ffffff" height="27" valign="top"><font face="Tahoma" size="2">Required.
+        An expression that specifies the index of a Node in the internal
+        cTreeView wrapper Dll/Class DisabledNodes collection.</font>
+        <p><font face="Tahoma" size="2">If a numeric expression, <i>index</i>
+        must be a number from 1 to the value of the <b>Count</b> property.</font></p>
+        <p><font face="Tahoma" size="2">If a string expression, <i>index</i>
+        must correspond to the <b>Key</b> property of the Node.</font></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p><b><font face="Tahoma" size="2">Remarks</font></b></p>
+<p><font face="Tahoma" size="2">If the value provided as <i>index</i> does not
+match ant existing member of the internal cTreeView wrapper Dll/Class
+DisabledNodes collection, an error occurs.</font></p>
+<table border="1" width="98%" bgcolor="#FFFFCC" bordercolorlight="#E2E2E2" bordercolordark="#C0C0C0" cellspacing="0" style="text-indent: 0; margin-left: 10" cellpadding="15">
+  <tr>
+    <td width="100%"><font face="Courier New" size="2">'<br>
+      '## Note: miDisabled has a reference to the vbTree.cTreeView class via
+      the cTreeView class<br>
+      '<br>
+      <br>
+      Debug.Print miDisabled.DisabledNode(1).Text<br>
+      <br>
+      Debug.Print miDisabled(1).Text</font></td>
+  </tr>
+</table>
+
+<p><b><font face="Tahoma" size="2">Data Type</font></b></p>
+<p><font face="Tahoma" size="2">MSComctlLib.Node</font></p>
+
+</body>
+
+</html>

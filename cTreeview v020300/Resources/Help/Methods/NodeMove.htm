@@ -1,0 +1,154 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>NodeMove</title>
+</head>
+
+<body>
+
+<table border="1" width="100%" bgcolor="#000080" bordercolor="#000080" bordercolorlight="#000080" bordercolordark="#000080">
+  <tr>
+    <td width="100%"><font color="#FFFFFF" size="5" face="Tahoma"><b>NodeMove</b></font><font color="#FFFFFF" size="5" face="Tahoma">
+      Method</font></td>
+  </tr>
+</table>
+<p><font size="2" face="Tahoma">Moves a <b>Node</b> object and optionally it's
+child nodes from one parent&nbsp; <b>Node</b> object to another&nbsp;<b>Node</b> object in the <b>TreeView</b> control.</font></p>
+<p><b><font size="2" face="Tahoma">Syntax</font></b></p>
+<p><font face="Tahoma" size="2"><i>object</i>.<b>NodeMove</b><b>(</b></font><font face="Tahoma" size="2"><i>TargetNode</i></font><font face="Tahoma" size="2"><i>,
+</i>
+</font><font face="Tahoma" size="2"><i>SourceNode</i></font><font face="Tahoma" size="2"><i>,
+</i></font><font face="Tahoma" size="2"><i>bSelect</i></font><font face="Tahoma" size="2"><i>,
+</i></font><font size="2" face="Tahoma"><i>eRelationship</i></font><font face="Tahoma" size="2"><b>)</b>
+</font></p>
+<p><font size="2" face="Tahoma">The <b>NodeMove</b><b> </b>Method syntax
+has these parts:</font></p>
+<table border="1" width="99%" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="77">
+  <tr>
+    <th width="11%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Part</font></th>
+    <th width="89%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Description</font></th>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><i><font size="2" face="Tahoma">object</font></i></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font size="2" face="Tahoma">Required.
+      An object expression that evaluates to an object in the Applies To list.</font></td>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font face="Tahoma" size="2"><i>TargetNode</i></font></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">Required.
+      A valid Node (MSComctlLib.Node)
+      object.</font></td>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font face="Tahoma" size="2"><i>SourceNode</i></font></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">Required.
+      A valid Node (MSComctlLib.Node)
+      object.</font></td>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font face="Tahoma" size="2"><i>bSelect</i></font></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">Optional.
+      Set selection to parent of <i>Node</i> after delete operation.</font></td>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma"><i>eRelationship</i></font></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">Optional.
+      A boolean value or constant that specifies the relationship to the </font><font face="Tahoma" size="2"><i>TargetNode
+      </i></font><font size="2" face="Tahoma">object, as described in settings.</font></td>
+  </tr>
+</table>
+<p><b><font size="2" face="Tahoma">Settings</font></b></p>
+<p><font size="2" face="Tahoma">The settings for <b>NodeMove</b><b> </b>Method
+are:</font></p>
+<table border="1" width="98%" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="77">
+  <tr>
+    <th width="9%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Setting</font></th>
+    <th width="70%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Description</font></th>
+  </tr>
+  <tr>
+    <td width="9%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font size="2" face="Tahoma">True</font></td>
+    <td width="70%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font face="Tahoma" size="2">Operation
+      was successful.</font></td>
+  </tr>
+  <tr>
+    <td width="9%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">False</font></td>
+    <td width="70%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font face="Tahoma" size="2">Operation
+      failed. (Trap the <b>Err</b> object for error condition)</font></td>
+  </tr>
+</table>
+<p><font size="2" face="Tahoma">The settings for <i>IncludeChildren</i><b> </b>operator
+are:</font></p>
+<table border="1" width="98%" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="77">
+  <tr>
+    <th width="9%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Setting</font></th>
+    <th width="70%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Description</font></th>
+  </tr>
+  <tr>
+    <td width="9%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font size="2" face="Tahoma">True</font></td>
+    <td width="70%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font face="Tahoma" size="2">Copy
+      all child <b>Node</b> objects that are associated with <i>SrcNode</i>.</font></td>
+  </tr>
+  <tr>
+    <td width="9%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">False</font></td>
+    <td width="70%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font face="Tahoma" size="2">Copy
+      only the <i>SrcNode.</i></font></td>
+  </tr>
+</table>
+<p><font size="2" face="Tahoma">The settings for </font><font size="2" face="Tahoma"><i>eRelationship
+</i></font><font size="2" face="Tahoma">operator
+are:</font></p>
+<table border="1" width="98%" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="77">
+  <tr>
+    <th width="21%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16"><font size="2" face="Tahoma">Constant</font></th>
+    <th width="19%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="center" height="16"><font size="2" face="Tahoma">Setting</font></th>
+    <th width="60%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16"><font size="2" face="Tahoma">Description</font></th>
+  </tr>
+  <tr>
+    <td width="21%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16"><font size="2" face="Tahoma">tvwFirst</font></td>
+    <td width="19%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" align="center"><font size="2" face="Tahoma">0</font></td>
+    <td width="60%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16"><font size="2" face="Tahoma">First.
+      The <b>Node </b>is placed before all other nodes at the same level of the
+      node named in <i>relative</i>.</font></td>
+  </tr>
+  <tr>
+    <td width="21%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27"><font size="2" face="Tahoma">tvwLast</font></td>
+    <td width="19%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" align="center"><font size="2" face="Tahoma">1</font></td>
+    <td width="60%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27"><font size="2" face="Tahoma">Last.
+      The <b>Node </b>is placed after all other nodes at the same level of the
+      node named in <i>relative</i>. Any Node added subsequently may be placed
+      after one added as Last.</font></td>
+  </tr>
+  <tr>
+    <td width="21%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27"><font size="2" face="Tahoma">tvwNext</font></td>
+    <td width="19%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" align="center"><font size="2" face="Tahoma">2</font></td>
+    <td width="60%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27"><font size="2" face="Tahoma">(Default)
+      Next. The <b>Node </b>is placed after the node named in <i>relative</i>.</font></td>
+  </tr>
+  <tr>
+    <td width="21%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27"><font size="2" face="Tahoma">tvwPrevious</font></td>
+    <td width="19%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" align="center"><font size="2" face="Tahoma">3</font></td>
+    <td width="60%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27"><font size="2" face="Tahoma">Previous.
+      The <b>Node</b> is placed before the node named in <i>relative</i>.</font></td>
+  </tr>
+  <tr>
+    <td width="21%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27"><font size="2" face="Tahoma">tvwChild</font></td>
+    <td width="19%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" align="center"><font size="2" face="Tahoma">4</font></td>
+    <td width="60%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27"><font size="2" face="Tahoma">Child.
+      The <b>Node</b> becomes a child node of the node named in <i>relative</i>.</font></td>
+  </tr>
+</table>
+<p><b><font face="Tahoma" size="2">Remarks</font></b></p>
+
+<p><font face="Tahoma" size="2">This method is used commonly in the drag and
+Drop operation.&nbsp;</font></p>
+
+<p><font face="Tahoma" size="2">Can also be used to set a Child node as a Root
+node by specifiying the <i>TargetNode</i> as an existing Root Node and <i>eRelationship</i>
+as tvwFirst, tvwLast, tvwNext, or tvwPrevious.</font></p>
+
+</body>
+
+</html>

@@ -1,0 +1,316 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>NodeAdd</title>
+</head>
+
+<body>
+
+<table border="1" width="100%" bgcolor="#000080" bordercolor="#000080" bordercolorlight="#000080" bordercolordark="#000080">
+  <tr>
+    <td width="100%"><font color="#FFFFFF" size="5" face="Tahoma"><b>NodeAdd</b></font><font color="#FFFFFF" size="5" face="Tahoma">
+      Method</font></td>
+  </tr>
+</table>
+<p><font size="2" face="Tahoma">Adds a Node object to the referenced <b>TreeView</b> 
+control. This method allows all properties to be set in one call and optionally
+return the created <b>Node </b>object.</font></p>
+<p><b><font size="2" face="Tahoma">Syntax</font></b></p>
+<p><font face="Tahoma" size="2"><i>object</i>.<b>NodeAdd</b><b>(</b><i>vRelative,
+eRelationship, sText, vImage, vSelectedImage, vTag, bBold, bChecked,
+bEnsureVisible, bExpanded, bSelected, bSorted, lForeColor, lBackColor,
+vExpandedImage</i><b>)</b>
+</font></p>
+<p><font size="2" face="Tahoma">The <b>NodeAdd</b><b> </b>Method syntax
+has these parts:</font></p>
+<table border="1" width="99%" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="77">
+  <tr>
+    <th width="11%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Part</font></th>
+    <th width="89%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Description</font></th>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><i><font size="2" face="Tahoma">object</font></i></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font size="2" face="Tahoma">Required.
+      An object expression that evaluates to an object in the Applies To list.</font></td>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><i><font face="Tahoma" size="2">vRelative</font></i></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">Optional.
+      The index number or key of a pre-existing <b>Node </b>object. The
+      relationship between the new <b>Node</b> and this pre-existing <b>Node</b>
+      is found in the next argument, relationship.</font></td>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><i><font face="Tahoma" size="2">eRelationship</font></i></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">Optional.
+      Specifies the relative placement of the <b>Node</b> object, as described
+      in Settings.</font></td>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><i><font size="2" face="Tahoma">sKey</font></i></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">Optional.
+      A unique string that can be used to retrieve the <b>Node</b> with the <b>Item</b>
+      (<b>Nodes</b> object in the referenced <b>Treeview</b> control) method.</font></td>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><i><font size="2" face="Tahoma">sText</font></i></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">Required.
+      The string that appears in the <b>Node</b>.</font></td>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><i><font face="Tahoma" size="2">vImage</font></i></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">Optional.
+      The index of an image in an associated <b>ImageList</b> control (linked to
+      the referenced <b>Treeview</b> control).</font></td>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><i><font face="Tahoma" size="2">vSelectedImage</font></i></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">Optional.
+      The index of an image in an associated <b>ImageList</b> control (linked to
+      the referenced <b>Treeview</b> control) that is shown when the <b>Node</b>
+      is selected.</font></td>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><i><font face="Tahoma" size="2">vTag</font></i></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">Optional.
+      A string expression identifying the object. The default is a zero-length
+      string (&quot;&quot;).</font></td>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><i><font face="Tahoma" size="2">bBold</font></i></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">Optional.
+      A Boolean expression specifying if the text is bold, as described in
+      Settings.</font></td>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><i><font face="Tahoma" size="2">bChecked</font></i></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">Optional.
+      A Boolean expression specifying if an item is checked, as described in
+      Settings.</font></td>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><i><font face="Tahoma" size="2">bEnsureVisible</font></i></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">Optional.
+      Ensures the specified <b>Node </b>object is visible. If necessary, this
+      method expands <b>Node </b>objects and scrolls the referenced <b>TreeView </b>control.</font></td>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><i><font face="Tahoma" size="2">bExpanded</font></i></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">Optional.
+      A Boolean expression that specifies whether the <b>Node</b> is expanded or
+      collapsed, as described in Settings.</font></td>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><i><font face="Tahoma" size="2">bSelected</font></i></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">Optional.
+      A Boolean expression that determines if a <b>Node</b> object is selected,
+      as described in Settings.</font></td>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><i><font face="Tahoma" size="2">bSorted</font></i></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">Optional.
+      A Boolean expression specifying whether the <b>Node </b>objects are
+      sorted, as described in Settings.</font></td>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><i><font face="Tahoma" size="2">lForeColor</font></i></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">Optional.
+      A value or constant that determines the background colour of an object, as
+      described in Settings.</font></td>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><i><font face="Tahoma" size="2">lBackColor</font></i></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">Optional.
+      A value or constant that determines the background colour of an object, as
+      described in Settings.</font></td>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><i><font face="Tahoma" size="2">vExpandedImage</font></i></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">Optional.
+      The index of an image in an associated <b>ImageList</b> control (linked to
+      the referenced <b>Treeview</b> control) that is shown when the <b>Node</b>
+      is expanded.</font></td>
+  </tr>
+</table>
+<p><b><font size="2" face="Tahoma">Settings</font></b></p>
+<p><font size="2" face="Tahoma">The settings for <i>eRelationship </i>operator
+are:</font></p>
+<table border="1" width="98%" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="77">
+  <tr>
+    <th width="21%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16"><font size="2" face="Tahoma">Constant</font></th>
+    <th width="19%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="center" height="16"><font size="2" face="Tahoma">Setting</font></th>
+    <th width="60%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16"><font size="2" face="Tahoma">Description</font></th>
+  </tr>
+  <tr>
+    <td width="21%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16"><font size="2" face="Tahoma">tvwFirst</font></td>
+    <td width="19%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" align="center"><font size="2" face="Tahoma">0</font></td>
+    <td width="60%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16"><font size="2" face="Tahoma">First.
+      The <b>Node </b>is placed before all other nodes at the same level of the
+      node named in <i>relative</i>.</font></td>
+  </tr>
+  <tr>
+    <td width="21%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27"><font size="2" face="Tahoma">tvwLast</font></td>
+    <td width="19%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" align="center"><font size="2" face="Tahoma">1</font></td>
+    <td width="60%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27"><font size="2" face="Tahoma">Last.
+      The <b>Node </b>is placed after all other nodes at the same level of the
+      node named in <i>relative</i>. Any Node added subsequently may be placed
+      after one added as Last.</font></td>
+  </tr>
+  <tr>
+    <td width="21%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27"><font size="2" face="Tahoma">tvwNext</font></td>
+    <td width="19%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" align="center"><font size="2" face="Tahoma">2</font></td>
+    <td width="60%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27"><font size="2" face="Tahoma">(Default)
+      Next. The <b>Node </b>is placed after the node named in <i>relative</i>.</font></td>
+  </tr>
+  <tr>
+    <td width="21%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27"><font size="2" face="Tahoma">tvwPrevious</font></td>
+    <td width="19%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" align="center"><font size="2" face="Tahoma">3</font></td>
+    <td width="60%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27"><font size="2" face="Tahoma">Previous.
+      The <b>Node</b> is placed before the node named in <i>relative</i>.</font></td>
+  </tr>
+  <tr>
+    <td width="21%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27"><font size="2" face="Tahoma">tvwChild</font></td>
+    <td width="19%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" align="center"><font size="2" face="Tahoma">4</font></td>
+    <td width="60%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27"><font size="2" face="Tahoma">Child.
+      The <b>Node</b> becomes a child node of the node named in <i>relative</i>.</font></td>
+  </tr>
+</table>
+<p><font size="2" face="Tahoma">The settings for <i>bBold </i>operator
+are:</font></p>
+<table border="1" width="98%" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="77">
+  <tr>
+    <th width="9%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Setting</font></th>
+    <th width="70%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Description</font></th>
+  </tr>
+  <tr>
+    <td width="9%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font size="2" face="Tahoma">True</font></td>
+    <td width="70%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font face="Tahoma" size="2">The
+      <b>Node</b> object Text is bold.</font></td>
+  </tr>
+  <tr>
+    <td width="9%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">False</font></td>
+    <td width="70%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font face="Tahoma" size="2">The
+      <b>Node</b> object Text is not bold.</font></td>
+  </tr>
+</table>
+<p><font size="2" face="Tahoma">The settings for <i>bChecked </i>operator
+are:</font></p>
+<table border="1" width="98%" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="77">
+  <tr>
+    <th width="9%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Setting</font></th>
+    <th width="70%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Description</font></th>
+  </tr>
+  <tr>
+    <td width="9%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font size="2" face="Tahoma">True</font></td>
+    <td width="70%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font face="Tahoma" size="2">The
+      <b>Node</b> object is not checked.</font></td>
+  </tr>
+  <tr>
+    <td width="9%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">False</font></td>
+    <td width="70%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font face="Tahoma" size="2">The
+      <b>Node</b> object is checked.</font></td>
+  </tr>
+</table>
+<p><font size="2" face="Tahoma">The settings for <i>bEnsureVisible </i>operator
+are:</font></p>
+<table border="1" width="98%" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="77">
+  <tr>
+    <th width="9%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Setting</font></th>
+    <th width="70%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Description</font></th>
+  </tr>
+  <tr>
+    <td width="9%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font size="2" face="Tahoma">True</font></td>
+    <td width="70%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font face="Tahoma" size="2">TreeView
+      control must scroll and/or expand to expose the <b>Node </b>object.</font></td>
+  </tr>
+  <tr>
+    <td width="9%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">False</font></td>
+    <td width="70%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font face="Tahoma" size="2">(Default)
+      The Node object may not be displayed when created.</font></td>
+  </tr>
+</table>
+<p><font size="2" face="Tahoma">The settings for <i>bExpanded </i>operator
+are:</font></p>
+<table border="1" width="98%" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="77">
+  <tr>
+    <th width="9%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Setting</font></th>
+    <th width="70%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Description</font></th>
+  </tr>
+  <tr>
+    <td width="9%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font size="2" face="Tahoma">True</font></td>
+    <td width="70%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font face="Tahoma" size="2">The
+      <b>Node</b> is created expanded.</font></td>
+  </tr>
+  <tr>
+    <td width="9%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">False</font></td>
+    <td width="70%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font face="Tahoma" size="2">(Default)
+      The <b>Node</b> is created collapsed.</font></td>
+  </tr>
+</table>
+<p><font size="2" face="Tahoma">The settings for <i>bSelected </i>operator
+are:</font></p>
+<table border="1" width="98%" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="77">
+  <tr>
+    <th width="9%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Setting</font></th>
+    <th width="70%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Description</font></th>
+  </tr>
+  <tr>
+    <td width="9%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font size="2" face="Tahoma">True</font></td>
+    <td width="70%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font face="Tahoma" size="2">The
+      <b>Node</b> is selected when created.</font></td>
+  </tr>
+  <tr>
+    <td width="9%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">False</font></td>
+    <td width="70%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font face="Tahoma" size="2">(Default)
+      The <b>Node</b> is not selected when created.</font></td>
+  </tr>
+</table>
+<p><font size="2" face="Tahoma">The settings for <i>bSorted </i>operator
+are:</font></p>
+<table border="1" width="98%" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="77">
+  <tr>
+    <th width="9%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Setting</font></th>
+    <th width="70%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Description</font></th>
+  </tr>
+  <tr>
+    <td width="9%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font size="2" face="Tahoma">True</font></td>
+    <td width="70%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font face="Tahoma" size="2">The
+      <b>Node</b> is sorted when created.</font></td>
+  </tr>
+  <tr>
+    <td width="9%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">False</font></td>
+    <td width="70%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font face="Tahoma" size="2">(Default)
+      The <b>Node</b> is not sorted when created.</font></td>
+  </tr>
+</table>
+<p><font size="2" face="Tahoma">The settings for <i>bBackColor, lForeColor </i>operators
+are:</font></p>
+<table border="1" width="98%" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="77">
+  <tr>
+    <th width="9%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Setting</font></th>
+    <th width="70%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Description</font></th>
+  </tr>
+  <tr>
+    <td width="9%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font size="2" face="Tahoma">Normal
+      RGB colors</font></td>
+    <td width="70%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font size="2" face="Tahoma">Colors
+      specified by using the Color palette or by using the <b>RGB</b> or <b>QBColor</b>
+      functions in code.</font></td>
+  </tr>
+  <tr>
+    <td width="9%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">System
+      default colors</font></td>
+    <td width="70%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">Colors
+      specified by system color constants listed in the Visual Basic (VB) object
+      library in the Object Browser. The Windows operating environment
+      substitutes the user's choices as specified in the Control Panel settings.</font></td>
+  </tr>
+</table>
+<p><b><font face="Tahoma" size="2">Remarks</font></b></p>
+
+</body>
+
+</html>

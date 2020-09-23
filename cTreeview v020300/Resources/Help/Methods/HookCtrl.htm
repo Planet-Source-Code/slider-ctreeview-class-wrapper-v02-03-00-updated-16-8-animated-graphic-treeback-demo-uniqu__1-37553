@@ -1,0 +1,82 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>HookCtrl</title>
+</head>
+
+<body>
+
+<table border="1" width="100%" bgcolor="#000080" bordercolor="#000080" bordercolorlight="#000080" bordercolordark="#000080">
+  <tr>
+    <td width="100%"><font color="#FFFFFF" size="5" face="Tahoma"><b>HookCtrl</b>
+      Method</font></td>
+  </tr>
+</table>
+<p><font size="2" face="Tahoma">This method is used to initialise the cTreeView
+wrapper Dll/class.</font></p>
+<p><b><font size="2" face="Tahoma">Syntax</font></b></p>
+<p><font face="Tahoma" size="2"><i>object</i>.<b>HookCtrl(</b><i>Ctrl, OpMode</i><b>)</b></font></p>
+<p><font size="2" face="Tahoma">The <b>HookCtrl </b>method syntax
+has these parts:</font></p>
+<table border="1" width="99%" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="77">
+  <tr>
+    <th width="11%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Part</font></th>
+    <th width="89%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Description</font></th>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><i><font size="2" face="Tahoma">object</font></i></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font size="2" face="Tahoma">Required.
+      An object expression that evaluates to an object in the Applies To list.</font></td>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><i><font size="2" face="Tahoma">Ctrl</font></i></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">Required.
+      A valid <b>Treeview</b> (MSComctlLib.Treeview)
+      object.</font></td>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><i><font size="2" face="Tahoma">OpMode</font></i></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">Optional.
+      A
+      value or constant that specifies the operation mode of the cTreeView
+      wrapper Dll/Class, as described in settings.</font></td>
+  </tr>
+</table>
+<p><b><font size="2" face="Tahoma">Settings</font></b></p>
+<p><font size="2" face="Tahoma">The settings for </font><i><font size="2" face="Tahoma">OpMode
+</font></i><font size="2" face="Tahoma">method
+are:</font></p>
+<table border="1" width="98%" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="77">
+  <tr>
+    <th width="21%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Constant</font></th>
+    <th width="19%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="center" height="16" valign="top"><font size="2" face="Tahoma">Setting</font></th>
+    <th width="60%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Description</font></th>
+  </tr>
+  <tr>
+    <td width="21%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font size="2" face="Tahoma">[Single
+      Select]</font></td>
+    <td width="19%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" align="center" valign="top"><font size="2" face="Tahoma">0</font></td>
+    <td width="60%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font size="2" face="Tahoma">(Default)
+      Only Single node selection allowed, Drag and Drop enabled.</font></td>
+  </tr>
+  <tr>
+    <td width="21%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">[Multi
+      Select]</font></td>
+    <td width="19%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" align="center" valign="top"><font size="2" face="Tahoma">1</font></td>
+    <td width="60%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">Enables
+      Multi-node Selection capabilities but disables Drag and Drop.</font></td>
+  </tr>
+</table>
+<p><b><font face="Tahoma" size="2">Remarks</font></b></p>
+<p><font face="Tahoma" size="2">If [Multi Select] mode is set, then the <b>iMultiSelect</b>
+interface must be implemented to access Multi-Node Selection functionality. When
+working with interface classes, all properties and methods must be used or an
+error will occur (See VB6 documentation for more information on working with
+interfaces).</font></p>
+
+</body>
+
+</html>

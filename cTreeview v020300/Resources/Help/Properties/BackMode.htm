@@ -1,0 +1,110 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>BackMode</title>
+</head>
+
+<body>
+
+<table border="1" width="100%" bgcolor="#000080" bordercolor="#000080" bordercolorlight="#000080" bordercolordark="#000080">
+  <tr>
+    <td width="100%"><font color="#FFFFFF" size="5" face="Tahoma"><b>BackMode</b>
+      Property</font></td>
+  </tr>
+</table>
+<p><font size="2" face="Tahoma">Returns/sets the background mode of the <b>Treeview</b>
+control to Normal, Color or Graphic mode.</font></p>
+<p><b><font size="2" face="Tahoma">Syntax</font></b></p>
+<p><font face="Tahoma" size="2"><i>object</i>.<b>BackMode</b> [=<i>value</i>]</font></p>
+<p><font size="2" face="Tahoma">The <b>BackMode </b>property syntax has these
+parts:</font></p>
+<table border="1" width="99%" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="77">
+  <tr>
+    <th width="11%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Part</font></th>
+    <th width="89%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Description</font></th>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><i><font size="2" face="Tahoma">object</font></i></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font size="2" face="Tahoma">Required.
+      An object expression that evaluates to an object in the Applies To list.</font></td>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><i><font size="2" face="Tahoma">value</font></i></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">A
+      value or constant that determines the background mode, as described in
+      Settings.</font></td>
+  </tr>
+</table>
+<p><b><font size="2" face="Tahoma">Settings</font></b></p>
+<p><font size="2" face="Tahoma">The <b>BackMode </b>property settings are:</font></p>
+<table border="1" width="98%" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="77">
+  <tr>
+    <th width="21%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Constant</font></th>
+    <th width="19%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="center" height="16" valign="top"><font size="2" face="Tahoma">Setting</font></th>
+    <th width="60%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Description</font></th>
+  </tr>
+  <tr>
+    <td width="21%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font size="2" face="Tahoma">bmDefault</font></td>
+    <td width="19%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" align="center" valign="top"><font size="2" face="Tahoma">0</font></td>
+    <td width="60%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font face="Tahoma" size="2">Disables
+      custom background draw mode (fastest).</font></td>
+  </tr>
+  <tr>
+    <td width="21%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">bmColor</font></td>
+    <td width="19%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" align="center" valign="top"><font size="2" face="Tahoma">1</font></td>
+    <td width="60%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font face="Tahoma" size="2">Allows
+      the <b>TreeView</b> backgrond color to be changed.&nbsp;</font></td>
+  </tr>
+  <tr>
+    <td width="21%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">bmGraphic</font></td>
+    <td width="19%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" align="center" valign="top"><font size="2" face="Tahoma">2</font></td>
+    <td width="60%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font face="Tahoma" size="2">Displays
+      a referenced STDPicture object or loads and displays a BMP/JPG/GIF file
+      into the background of the <b>TreeView</b> control.</font></td>
+  </tr>
+</table>
+<p><b><font face="Tahoma" size="2">Remarks</font></b></p>
+<p><font size="2" face="Tahoma"><i>bmColor</i> and </font><font size="2" face="Tahoma"><i>bmGraphic</i>
+modes will not affect the custom colors for all <b>Node</b> objects in the <b>TreeView</b>
+control.</font></p>
+<p><b><font face="Tahoma" size="2">Data Type</font></b></p>
+<p><font face="Tahoma" size="2"><b>eBackMode&nbsp;</b></font></p>
+
+<p><font face="Tahoma" size="2"><b>Example</b></font></p>
+<table border="1" width="98%" bgcolor="#FFFFCC" bordercolorlight="#E2E2E2" bordercolordark="#C0C0C0" cellspacing="0" style="text-indent: 0; margin-left: 10" cellpadding="15">
+  <tr>
+    <td width="100%"><font face="Courier New" size="2">'<br>
+      '## Note: oTree
+      is a reference to the vbTree.cTreeView class<br>
+      '<br>
+      '## Load Graphic Background image from file<br>
+      '<br>
+      With oTree<br>
+      &nbsp;&nbsp;&nbsp; .Backmode = bmGraphic<br>
+      &nbsp;&nbsp;&nbsp; .BackFileName = App.Path + &quot;\TreeBack.Gif&quot;<br>
+      End With</font></td>
+  </tr>
+</table>
+
+<p>&nbsp;</p>
+<table border="1" width="98%" bgcolor="#FFFFCC" bordercolorlight="#E2E2E2" bordercolordark="#C0C0C0" cellspacing="0" style="text-indent: 0; margin-left: 10" cellpadding="15">
+  <tr>
+    <td width="100%"><font face="Courier New" size="2">'<br>
+      '## Note: oTree
+      is a reference to the vbTree.cTreeView class<br>
+      '<br>
+      '## Set Background color to ToolTip BackColor<br>
+      '<br>
+      With oTree<br>
+      &nbsp;&nbsp;&nbsp; .Backmode = bmColor<br>
+      &nbsp;&nbsp;&nbsp; .BackColor = vbInfoBackground<br>
+      End With</font></td>
+  </tr>
+</table>
+
+</body>
+
+</html>

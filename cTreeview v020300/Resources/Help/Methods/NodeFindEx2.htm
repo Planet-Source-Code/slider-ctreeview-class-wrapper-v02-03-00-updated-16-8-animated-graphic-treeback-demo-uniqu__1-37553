@@ -1,0 +1,276 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>NodeFindEx2</title>
+</head>
+
+<body>
+
+<table border="1" width="100%" bgcolor="#000080" bordercolor="#000080" bordercolorlight="#000080" bordercolordark="#000080">
+  <tr>
+    <td width="100%"><font color="#FFFFFF" size="5" face="Tahoma"><b>NodeFindEx2</b>
+      Method</font></td>
+  </tr>
+</table>
+<p><font size="2" face="Tahoma">Search for a specific <b>Node</b>  object
+&amp;/or a Group of <b>Node</b> objects containing specific text in the <b>TreeView</b> control.</font></p>
+<p><b><font size="2" face="Tahoma">Syntax</font></b></p>
+<p><font face="Tahoma" size="2"><i>object</i>.<b>NodeFindEx2(</b><i>LikeText</i><i>,
+StartNode, FindMode, CompareMethod</i><b>)</b></font></p>
+<p><font size="2" face="Tahoma">The <b>NodeFindEx2 </b>Method syntax
+has these parts:</font></p>
+<table border="1" width="99%" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="77">
+  <tr>
+    <th width="11%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Part</font></th>
+    <th width="89%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Description</font></th>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><i><font size="2" face="Tahoma">object</font></i></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font size="2" face="Tahoma">Required.
+      An object expression that evaluates to an object in the Applies To list.</font></td>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font face="Tahoma" size="2"><i>LikeText</i></font></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">Required.
+      Any (pattern-matching) string expression.</font></td>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font face="Tahoma" size="2"><i>StartNode</i></font></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">Optional.
+      A valid Node (MSComctlLib.Node) object..</font></td>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font face="Tahoma" size="2"><i>FindMode</i></font></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">Optional.
+      Specifies what property of the <b>Node</b> object to search, as described in
+      settings.</font></td>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font face="Tahoma" size="2"><i>CompareMethod</i></font></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">Optional.
+      Specifies whether to force case matching, as described in settings. </font></td>
+  </tr>
+</table>
+<p><b><font size="2" face="Tahoma">Settings</font></b></p>
+<p><font size="2" face="Tahoma">The settings for Find<i>Mode operator </i>are:</font></p>
+<table border="1" width="675" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="77">
+  <tr>
+    <th width="151" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Setting</font></th>
+    <th width="508" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Description</font></th>
+  </tr>
+  <tr>
+    <td width="14%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top" nowrap><font size="2" face="Tahoma">[Find Node Text]</font></td>
+    <td width="508" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font face="Tahoma" size="2">(Default)
+      Only searches a <b>Node</b> object's <b>Text</b> property.</font></td>
+  </tr>
+  <tr>
+    <td width="14%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top" nowrap><font size="2" face="Tahoma">[Find
+      Node Key]</font></td>
+    <td width="508" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font face="Tahoma" size="2">Only
+      searches a <b>Node</b> object's <b>Key</b> property.</font></td>
+  </tr>
+  <tr>
+    <td width="14%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top" nowrap><font face="Tahoma" size="2">[Find Node Text And Key]</font></td>
+    <td width="508" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font face="Tahoma" size="2">Search
+      the <b>Node</b> object's <b>Text </b>&amp;<b> Key</b> properties.</font></td>
+  </tr>
+</table>
+<p><font size="2" face="Tahoma">The settings for <i>CompareMethod operator </i>are:</font></p>
+<table border="1" width="98%" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="77">
+  <tr>
+    <th width="9%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Setting</font></th>
+    <th width="70%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Description</font></th>
+  </tr>
+  <tr>
+    <td width="9%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font size="2" face="Tahoma">True</font></td>
+    <td width="70%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font face="Tahoma" size="2">Performs
+      a binary comparison.</font></td>
+  </tr>
+  <tr>
+    <td width="9%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">False</font></td>
+    <td width="70%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font face="Tahoma" size="2">(Default)
+      Performs a textual comparison.</font></td>
+  </tr>
+</table>
+<p><b><font face="Tahoma" size="2">Remarks</font></b></p>
+
+<p><font face="Tahoma" size="2">The behaviour of the pattern-matching <i>LikeText</i>
+depends on the </font><font face="Tahoma" size="2"><i>CompareMethod</i> chosen</font><font face="Tahoma" size="2">.</font></p>
+<p><font face="Tahoma" size="2"><i>CompareMethod = vbBinaryCompare</i> results
+in string comparisons based on a sort oder derived from the internal binary
+representations of the characters. Sort order is determined by the code page. In
+the following example, a typical binary sort order is shown:</font></p>
+<p><font face="Tahoma" size="2">A &lt; B &lt; E &lt; Z &lt; a &lt; b &lt; e &lt;
+z &lt; À &lt; Ê &lt; Ø &lt; à &lt; ê &lt; ø</font></p>
+<p><font face="Tahoma" size="2"><i>CompareMethod = vbTextCompare </i></font><font face="Tahoma" size="2">results
+in string comparisons based on a case-insensitive, textual sort order determined
+by your system's locale. When you sort The same characters using </font><font face="Tahoma" size="2"><i>vbTextCompare</i></font><font face="Tahoma" size="2">,
+the following text sort order is produced:</font></p>
+<p><font face="Tahoma" size="2">(A=a) &lt; (À=à) &lt; (B=b) &lt; (E=e) &lt; (Ê=ê)
+&lt; (Z=z) &lt; (Ø=ø)</font></p>
+<p><font face="Tahoma" size="2">Built-in pattern matching provides a versatile
+tool for string comparisons. The pattern-matching features allow you to use
+wildcard characters, character lists, or character ranges, in any combination,
+to match strings. The following table shows the characters allowed in <i>pattern</i>
+and what they match:</font></p>
+<table cols="2" cellPadding="5" rules="rows" border="0" frame="below">
+  <tbody>
+    <tr vAlign="top">
+      <td class="label" width="18%"><b><font face="Tahoma" size="2">Characters
+        in <i>pattern</i></font></b></td>
+      <td class="label" width="82%"><b><font face="Tahoma" size="2">Matches in <i>string</i></font></b></td>
+    </tr>
+    <tr vAlign="top">
+      <td width="18%"><b><font face="Tahoma" size="2">?</font></b></td>
+      <td width="82%"><font face="Tahoma" size="2">Any single character.</font></td>
+    </tr>
+    <tr vAlign="top">
+      <td width="18%"><b><font face="Tahoma" size="2">*</font></b></td>
+      <td width="82%"><font face="Tahoma" size="2">Zero or more characters.</font></td>
+    </tr>
+    <tr vAlign="top">
+      <td width="18%"><b><font face="Tahoma" size="2">#</font></b></td>
+      <td width="82%"><font face="Tahoma" size="2">Any single digit (0–9).</font></td>
+    </tr>
+    <tr vAlign="top">
+      <td width="18%"><font face="Tahoma" size="2">[<i>charlist</i>]</font></td>
+      <td width="82%"><font face="Tahoma" size="2">Any single character in <i>charlist</i>.</font></td>
+    </tr>
+    <tr vAlign="top">
+      <td width="18%"><font face="Tahoma" size="2">[<b>!</b><i>charlist</i>]</font></td>
+      <td width="82%"><font face="Tahoma" size="2">Any single character not in <i>charlist</i>.</font></td>
+    </tr>
+  </tbody>
+</table>
+<font face="Tahoma" size="2"><br>
+</font>
+<p><font face="Tahoma" size="2">A group of one or more characters (<i>charlist</i>)
+enclosed in brackets (<b>[ ]</b>) can be used to match any single character in <i>string</i>
+and can include almost any character code, including digits.</font></p>
+<p class="indent"><font face="Tahoma" size="2"><b>Note</b>&nbsp;&nbsp;&nbsp;To
+match the special characters left bracket (<b>[</b>), question mark (<b>?</b>),
+number sign (<b>#</b>), and asterisk (<b>*</b>), enclose them in brackets. The
+right bracket (<b>]</b>) can't be used within a group to match itself, but it
+can be used outside a group as an individual character.</font></p>
+<p><font face="Tahoma" size="2">By using a hyphen (<b>–</b>) to separate the
+upper and lower bounds of the range, <i>charlist</i> can specify a range of
+characters. For example, <code>[A-Z]</code> results in a match if the
+corresponding character position in <i>string</i> contains any uppercase letters
+in the range A–Z. Multiple ranges are included within the brackets without
+delimiters.</font></p>
+<p><font face="Tahoma" size="2">Other important rules for pattern matching
+include the following:</font></p>
+<ul type="disc">
+  <li><font face="Tahoma" size="2">An exclamation point (<b>!</b>) at the
+    beginning of <i>charlist</i> means that a match is made if any character
+    except the characters in <i>charlist</i> is found in <i>string</i>. When
+    used outside brackets, the exclamation point matches itself.<br>
+    <br>
+    </font>
+  <li><font face="Tahoma" size="2">A hyphen (<b>–</b>) can appear either at
+    the beginning (after an exclamation point if one is used) or at the end of <i>charlist</i>
+    to match itself. In any other location, the hyphen is used to identify a
+    range of characters.<br>
+    <br>
+    </font>
+  <li><font face="Tahoma" size="2">When a range of characters is specified, they
+    must appear in ascending sort order (from lowest to highest). <code>[A-Z]</code>
+    is a valid pattern, but <code>[Z-A]</code> is not.<br>
+    <br>
+    </font>
+  <li><font face="Tahoma" size="2">The character sequence <code>[]</code> is
+    considered a zero-length string (&quot;&quot;).</font></li>
+</ul>
+<p><font face="Tahoma" size="2">In some languages, there are special characters
+in the alphabet that represent two separate characters. For example, several
+languages use the character &quot;æ&quot; to represent the characters
+&quot;a&quot; and &quot;e&quot; when they appear together. The <i>LikeText</i>
+recognizes that the single special character and the two individual characters
+are equivalent.</font></p>
+<p><font face="Tahoma" size="2">When a language that uses a special character is
+specified in the system locale settings, an occurrence of the single special
+character in either <i>pattern</i> or <i>string</i> matches the equivalent
+2-character sequence in the other string. Similarly, a single special character
+in <i>pattern</i> enclosed in brackets (by itself, in a list, or in a range)
+matches the equivalent 2-character sequence in <i>string</i>.</font></p>
+<p>&nbsp;</p>
+<p><font face="Tahoma" size="2">The following table shows how you can use Like to test expressions for different patterns.</font></p>
+<table border="1" width="64%" bordercolor="#FFFFFF" bordercolordark="#FFFFFF" bordercolorlight="#FFFFFF">
+  <tr>
+    <td width="27%" bgcolor="#C0C0C0" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF"><b><font face="Tahoma" size="2">Kind of match</font></b></td>
+    <td width="14%" bgcolor="#C0C0C0" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF"><b><font face="Tahoma" size="2">	Pattern&nbsp;</font></b></td>
+    <td width="33%" bgcolor="#C0C0C0" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF"><b><font face="Tahoma" size="2"> 	Match (returns True)</font></b></td>
+    <td width="43%" bgcolor="#C0C0C0" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF"><b><font face="Tahoma" size="2">	No match (returns False)</font></b></td>
+  </tr>
+  <tr>
+    <td width="27%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">Multiple characters</font></td>
+    <td width="14%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">	a*a</font></td>
+    <td width="33%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">aa,
+      aBa, aBBBa</font></td>
+    <td width="43%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">	aBC</font></td>
+  </tr>
+  <tr>
+    <td width="27%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF">&nbsp;</td>
+    <td width="14%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">*ab*</font></td>
+    <td width="33%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">abc,
+      AABB, Xab</font></td>
+    <td width="43%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">aZb, bac</font></td>
+  </tr>
+  <tr>
+    <td width="27%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF">&nbsp;</td>
+    <td width="14%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">&nbsp;ab*</font></td>
+    <td width="33%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">abcdefg, abc</font></td>
+    <td width="43%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">&nbsp;cab, aab</font></td>
+  </tr>
+  <tr>
+    <td width="27%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">Special character</font></td>
+    <td width="14%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">	a[*]a</font></td>
+    <td width="33%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">	a*a</font></td>
+    <td width="43%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">	aaa</font></td>
+  </tr>
+  <tr>
+    <td width="27%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">Single
+      character</font></td>
+    <td width="14%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">	a?a</font></td>
+    <td width="33%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">aaa, a3a, aBa</font></td>
+    <td width="43%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">	aBBBa</font></td>
+  </tr>
+  <tr>
+    <td width="27%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">Single
+      digit</font></td>
+    <td width="14%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">	a#a</font></td>
+    <td width="33%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">	a0a, a1a, a2a</font></td>
+    <td width="43%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">aaa, a10a</font></td>
+  </tr>
+  <tr>
+    <td width="27%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">Range of characters</font></td>
+    <td width="14%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">	[a-z]</font></td>
+    <td width="33%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">&nbsp;f, p, j</font></td>
+    <td width="43%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">	2, &amp;</font></td>
+  </tr>
+  <tr>
+    <td width="27%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">Outside a range</font></td>
+    <td width="14%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">	[!a-z]</font></td>
+    <td width="33%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">	9, &amp;, %</font></td>
+    <td width="43%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">	b, a</font></td>
+  </tr>
+  <tr>
+    <td width="27%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">Not a digit</font></td>
+    <td width="14%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">	[!0-9]</font></td>
+    <td width="33%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">	A, a, &amp;, ~</font></td>
+    <td width="43%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">	0, 1, 9</font></td>
+  </tr>
+  <tr>
+    <td width="27%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">Combined</font></td>
+    <td width="14%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">a[!b-m]#</font></td>
+    <td width="33%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">	An9, az0, a99</font></td>
+    <td width="43%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF"><font face="Tahoma" size="2">abc, aj0</font></td>
+  </tr>
+</table>
+
+</body>
+
+</html>
