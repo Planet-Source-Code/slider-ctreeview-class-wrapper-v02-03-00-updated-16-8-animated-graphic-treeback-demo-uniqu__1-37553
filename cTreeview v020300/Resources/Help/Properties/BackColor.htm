@@ -1,0 +1,89 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>BackColor</title>
+</head>
+
+<body>
+
+<table border="1" width="100%" bgcolor="#000080" bordercolor="#000080" bordercolorlight="#000080" bordercolordark="#000080">
+  <tr>
+    <td width="100%"><b><font color="#FFFFFF" size="5" face="Tahoma">BackColor</font></b><font color="#FFFFFF" size="5" face="Tahoma">
+      Property</font></td>
+  </tr>
+</table>
+<p><font size="2" face="Tahoma">Returns/sets the background color of the <b>Treeview</b>
+control.</font></p>
+<p><b><font size="2" face="Tahoma">Syntax</font></b></p>
+<p><i><font size="2" face="Tahoma">object</font></i><font size="2" face="Tahoma">.<b>BackColor</b>
+[=<i>value</i>]</font></p>
+<p><font size="2" face="Tahoma">The <b>BackColor </b>property syntax has these
+parts:</font></p>
+<table border="1" width="99%" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="77">
+  <tr>
+    <th width="11%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Part</font></th>
+    <th width="89%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Description</font></th>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><i><font size="2" face="Tahoma">object</font></i></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font size="2" face="Tahoma">Required.
+      An object expression that evaluates to an object in the Applies To list.</font></td>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><i><font size="2" face="Tahoma">value</font></i></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">A
+      value or constant that determines the background mode, as described in
+      Settings.&nbsp;</font></td>
+  </tr>
+</table>
+<p><b><font size="2" face="Tahoma">Settings</font></b></p>
+<p><font size="2" face="Tahoma">The cTreeView wrapper uses the Microsoft Windows
+operating environment red-green-blue (RGB) color scheme. The settings for <b>value</b>
+are:</font></p>
+<table border="1" width="98%" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="77">
+  <tr>
+    <th width="21%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Constant</font></th>
+    <th width="60%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Description</font></th>
+  </tr>
+  <tr>
+    <td width="21%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font face="Tahoma" size="2">Normal
+      RGB colors</font></td>
+    <td width="60%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font face="Tahoma" size="2">Colors
+      specified by using the Color palette or by using the <b>RGB</b> or <b>QBColor</b>
+      functions in code.</font></td>
+  </tr>
+  <tr>
+    <td width="21%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font face="Tahoma" size="2">System
+      default colors</font></td>
+    <td width="60%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font face="Tahoma" size="2">Colors specified by system color constants listed in the Visual Basic (VB)object library in theObject Browser. The Windows operating environment substitutes the user's choices as specified in theControl Panel settings.</font></td>
+  </tr>
+</table>
+<p><b><font size="2" face="Tahoma">Remarks</font></b></p>
+<p><font face="Tahoma" size="2">The <b>BackColor </b>will not affect the <b>TreeView</b>
+control until <i>object.</i><b>BackMode</b> = vbColor. (Default =
+vbWindowBackground)</font></p>
+<p><font face="Tahoma" size="2">The valid range for a normal RGB color is 0 to 16,777,215 (&amp;HFFFFFF). The high byte of a number in this range equals 0; the lower 3 bytes, from least to most significant byte, determine the amount of red, green, and blue, respectively. The red, green, and blue components are each represented by a number between 0 and 255 (&amp;HFF). If the high byte isn't 0, Visual Basic uses the system colors, as defined in the user'sControl Panel settings and by constants listed in the Visual Basic (VB)object library in theObject Browser.</font></p>
+<p><b><font size="2" face="Tahoma">Data Type</font></b></p>
+<p><font face="Tahoma" size="2"><b>OLE_COLOR</b></font><font face="Tahoma" size="2"><b>&nbsp;</b></font></p>
+<p><font face="Tahoma" size="2"><b>Example</b></font></p>
+<p>&nbsp;</p>
+<table border="1" width="98%" bgcolor="#FFFFCC" bordercolorlight="#E2E2E2" bordercolordark="#C0C0C0" cellspacing="0" style="text-indent: 0; margin-left: 10" cellpadding="15">
+  <tr>
+    <td width="100%"><font face="Courier New" size="2">'<br>
+      '## Note: oTree is a reference to the vbTree.cTreeView class<br>
+      '<br>
+      '## Set Background color to ToolTip BackColor<br>
+      '<br>
+      With oTree<br>
+      &nbsp;&nbsp;&nbsp; .Backmode = bmColor<br>
+      &nbsp;&nbsp;&nbsp; .BackColor = vbInfoBackground<br>
+      End With</font></td>
+  </tr>
+</table>
+
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Read Me First</title>
+</head>
+
+<body>
+
+<table border="1" width="100%" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="54">
+  <tr>
+    <td width="100%" height="39" bgcolor="#000080"><font color="#FFFFFF" size="5" face="Tahoma"><b>Read
+      Me First!</b></font></td>
+  </tr>
+  <tr>
+    <td width="3" height="3" bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+</table>
+
+<p><font size="2" face="Tahoma">Welcome to the latest release of the cTreeview class designed to simply the
+<b>TreeView</b> control usability plus add new functionality. (View <b>History</b> for a list of features that have been added.) Four tutorial
+applications have also been included to help learn how to use most features found the class wrapper.<br>
+<br>
+Just some quick notes to get you started:-<br>
+</font></p>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" height="521">
+  <tr>
+    <td width="3%" align="center" valign="top" bgcolor="#FFFFCC" height="91"><font size="2" face="Tahoma"><b>1.</b></font></td>
+    <td width="1%" valign="top" bgcolor="#FFFFCC" height="91"></td>
+    <td width="96%" valign="top" bgcolor="#FFFFCC" height="91"><font size="2" face="Tahoma"> Before loading any of the projects into the IDE, the DLL must be
+      extracted   and registered. There is a zip file in the '.\cTreeview\Runtime'   directory. Unzip the files into the directory and register the vbTree.DLL   file ($System$\regsvr32
+      $Install_Dir$\cTreeview\Runtime\vbTree.DLL.   Directory must be 8.3 format [Where $System$ = Windows System Directory &amp;
+      $Install_Dir$ is the host drive and directory for the cTreeview directory   (e.g. c:\Windows\System\regsvr32
+      c:\MyProj~1\cTreeView\Runtime\vbTree.DLL {on the same line})].</font></td>
+  </tr>
+  <tr>
+    <td width="3%" align="center" valign="top" bgcolor="#E7E3E7" height="146"><font size="2" face="Tahoma"><b>2.</b></font></td>
+    <td width="1%" valign="top" bgcolor="#E7E3E7" height="146"></td>
+    <td width="96%" valign="top" bgcolor="#E7E3E7" height="146"><font size="2" face="Tahoma"> Each tutorial directory has three ways of loading:</font>
+      <table border="0" width="100%" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="4%" align="center"><font size="2" face="Tahoma"><b>a)</b></font></td>
+          <td width="1%"></td>
+          <td width="24%"><font size="2" face="Tahoma">Tutorial?.vbp&nbsp;</font></td>
+          <td width="71%"><font size="2" face="Tahoma">load the tutorial with a
+            reference to the vbTree.DLL</font></td>
+        </tr>
+        <tr>
+          <td width="4%" align="center"><font size="2" face="Tahoma"><b>b)</b></font></td>
+          <td width="1%"></td>
+          <td width="24%"><font size="2" face="Tahoma">Tutorial?_inc_VbTree.vbg</font></td>
+          <td width="71%"><font size="2" face="Tahoma">project group that will
+            load both the tutorial &amp; the vbTree DLL source</font></td>
+        </tr>
+        <tr>
+          <td width="4%" align="center"><font size="2" face="Tahoma"><b>c)</b></font></td>
+          <td width="1%"></td>
+          <td width="24%"><font size="2" face="Tahoma">Tutorial?_NODLL.vbp</font></td>
+          <td width="71%"><font size="2" face="Tahoma">load the tutorial and the
+            cTREEVIEW Class Wrapper files as a single project with no vbTree.DLL
+            dependancy</font></td>
+        </tr>
+      </table>
+      <p align="left" style="margin-top: -1"><font size="2" face="Tahoma">   The third method,
+      c), causes the cTreeview.cls &amp; iMultiSelect.cls classes to   change
+      their instances to Private. So make sure that you read the headers   of these files to alter the instancing depending on the type of compile   being used.</font></td>
+  </tr>
+  <tr>
+    <td width="3%" align="center" valign="top" bgcolor="#FFFFCC" height="41"><font size="2" face="Tahoma"><b>3.</b></font></td>
+    <td width="1%" valign="top" bgcolor="#FFFFCC" height="41"></td>
+    <td width="96%" valign="top" bgcolor="#FFFFCC" height="41"><font size="2" face="Tahoma"> In the .\cTreeview\Resources\Help directory is an Xml document created by
+      <a href="http://www.mztools.com" target="_blank">   MZTools</a> that can be viewed in a Web Browser that   outlines all of the properties and methods of all vbTree.DLL classes.</font></td>
+  </tr>
+  <tr>
+    <td width="3%" align="center" valign="top" bgcolor="#E7E3E7" height="41"><font size="2" face="Tahoma"><b>4.</b></font></td>
+    <td width="1%" valign="top" bgcolor="#E7E3E7" height="41"></td>
+    <td width="96%" valign="top" bgcolor="#E7E3E7" height="41"><font size="2" face="Tahoma"> In creating these projects, I've used some external libraries. They are:   Microsoft XML v3.0 (DLLs), Microsoft ADO v2.5 (DLLs), Microsoft Windows   Common Controls 6.0 SP4 (OCX).</font></td>
+  </tr>
+  <tr>
+    <td width="3%" align="center" valign="top" bgcolor="#FFFFCC" height="202"><font size="2" face="Tahoma"><b>5.</b></font></td>
+    <td width="1%" valign="top" bgcolor="#FFFFCC" height="202"></td>
+    <td width="96%" valign="top" bgcolor="#FFFFCC" height="202"><font size="2" face="Tahoma"> For those who have used the earlier versions of the cTreeView Wrapper   class, be aware that there have been some changes that break
+      compatibility with the earlier versions. They are as follows:-</font>
+      <table border="0" width="100%" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="4%" align="center"><font size="2" face="Tahoma"><b>a)</b></font></td>
+          <td width="1%"></td>
+          <td width="95%"><font size="2" face="Tahoma"><b>CutIconState</b> was a function. This is now a Read/Write property           called
+            <b><a href="../Properties/CutIcon.htm" target="Main">CutIcon</a></b>.</font></td>
+        </tr>
+        <tr>
+          <td width="4%" align="center"><font size="2" face="Tahoma"><b>b)</b></font></td>
+          <td width="1%"></td>
+          <td width="95%"><font size="2" face="Tahoma"><b>NodeFirstViewable</b> is now a Read/Write           property called
+            <b><a href="../Properties/FirstVisibleNode.htm" target="Main">FirstVisibleNode</a></b>.</font></td>
+        </tr>
+        <tr>
+          <td width="4%" align="center"><font size="2" face="Tahoma"><b>c)</b></font></td>
+          <td width="1%"></td>
+          <td width="95%"><font size="2" face="Tahoma">Property <b>NodeLastViewable</b> is now a Read only           property called
+            <b><a href="../Properties/LastVisibleNode.htm" target="Main">LastVisibleNode</a></b>.</font></td>
+        </tr>
+        <tr>
+          <td width="4%" align="center"><font size="2" face="Tahoma"><b>d)</b></font></td>
+          <td width="1%"></td>
+          <td width="95%"><font size="2" face="Tahoma"> Event: <b>CopyNode</b> now has an additional field called
+            <b>Cancel</b>.           This is now used instead of write only property
+            <b>CancelCopy</b>.</font></td>
+        </tr>
+        <tr>
+          <td width="4%" align="center"><font size="2" face="Tahoma"><b>e)</b></font></td>
+          <td width="1%"></td>
+          <td width="95%"><font size="2" face="Tahoma">Method <b>NodeDelete</b> has a new field
+            <b>bIncludeChildren</b> (Default           = True). If <b>bIncludeChildren</b> is false, only the nominated node           will be deleted and the child nodes will move up in nesting           levels. (See Tutorial 1) i.e. to the node's parent.</font></td>
+        </tr>
+        <tr>
+          <td width="4%" align="center"><font size="2" face="Tahoma"><b>f)</b></font></td>
+          <td width="1%"></td>
+          <td width="95%"><font size="2" face="Tahoma">Method <b>NodeMove</b>
+            was expanded to allow more precise placement of nodes.</font></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td width="3%" align="center" valign="top" bgcolor="#E7E3E7" height="41"><font size="2" face="Tahoma"><b>6.</b></font></td>
+    <td width="1%" valign="top" bgcolor="#E7E3E7" height="41"></td>
+    <td width="96%" valign="top" bgcolor="#E7E3E7" height="41"><font size="2" face="Tahoma">There
+      have be issues with the IDE stopping when working with the Multiselect
+      feature. The IDE has several way of handling errors. This project was
+      developed using <b>Break on Unhandled Errors</b>. To set this, on the IDE
+      menu:- <b>Tools</b> &gt; <b>Options</b> &gt; set <b>Error Trapping</b> = <b>Break
+      on Unhandled Errors</b> option.</font></td>
+  </tr>
+</table>
+<p><font size="2" face="Tahoma">Lastly, if you are looking for the latest
+version, then click <a href="http://www.planetsourcecode.com/vb/scripts/BrowseCategoryOrSearchResults.asp?lngWId=1&amp;blnAuthorSearch=TRUE&amp;lngAuthorId=107321&amp;strAuthorName=Slider&amp;txtMaxNumberOfEntriesPerPage=25" target="_blank"><b>here</b></a>.</font></p>
+
+<p><font size="2" face="Tahoma">Enjoy!</font></p>
+
+</body>
+
+</html>

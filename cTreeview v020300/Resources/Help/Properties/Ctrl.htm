@@ -1,0 +1,61 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Ctrl Property</title>
+</head>
+
+<body>
+
+<table border="1" width="100%" bgcolor="#000080" bordercolor="#000080" bordercolorlight="#000080" bordercolordark="#000080">
+  <tr>
+    <td width="100%"><font color="#FFFFFF" size="5" face="Tahoma"><b>Ctrl</b>
+      Property</font></td>
+  </tr>
+</table>
+<p><font size="2" face="Tahoma">Exposes the <b>Treeview</b> control's properties
+and methods that are not wrapped by the cTreeview wrapper class.</font></p>
+<p><b><font size="2" face="Tahoma">Syntax</font></b></p>
+<p><font face="Tahoma" size="2"><i>object</i>.<b>Ctrl</b></font></p>
+<p><font size="2" face="Tahoma">The <b>Ctrl</b> property syntax has these parts:</font></p>
+<table border="1" width="99%" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="49">
+  <tr>
+    <th width="11%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="4" valign="top"><font size="2" face="Tahoma">Part</font></th>
+    <th width="89%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="4" valign="top"><font size="2" face="Tahoma">Description</font></th>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="1" valign="top"><i><font size="2" face="Tahoma">object</font></i></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="1" valign="top"><font size="2" face="Tahoma">An
+      object expression that evaluates to an object in the Applies To list.</font></td>
+  </tr>
+</table>
+<p><b><font face="Tahoma" size="2">Data Type</font></b></p>
+<p><font face="Tahoma" size="2">MSComctlLib.Treeview</font></p>
+<p><font face="Tahoma" size="2"><b>Example</b></font></p>
+<table border="1" width="98%" bgcolor="#FFFFCC" bordercolorlight="#E2E2E2" bordercolordark="#C0C0C0" cellspacing="0" style="text-indent: 0; margin-left: 10" cellpadding="15">
+  <tr>
+    <td width="100%"><font face="Courier New" size="2">Dim oTree as
+      vbTree.cTreeview<br>
+      set oTree = new vbTree.cTreeview<br>
+      <br>
+      With oTree<br>
+      &nbsp;&nbsp;&nbsp; .Hook Treeview1<br>
+      &nbsp;&nbsp;&nbsp; With .Ctrl<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .Style =
+      tvwTreelinesPlusMinusPictureText<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .Linestyle = tvwRootlines<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .Indentation = 10<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .FullRowSelect = False<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .HideSelection = False<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .HotTracking = True<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .LabelEdit = tvwAutomatic<br>
+      &nbsp;&nbsp;&nbsp; End With<br>
+      End With</font></td>
+  </tr>
+</table>
+
+</body>
+
+</html>

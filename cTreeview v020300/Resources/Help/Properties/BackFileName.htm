@@ -1,0 +1,65 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>BackFileName</title>
+</head>
+
+<body>
+
+<table border="1" width="100%" bgcolor="#000080" bordercolor="#000080" bordercolorlight="#000080" bordercolordark="#000080">
+  <tr>
+    <td width="100%"><font color="#FFFFFF" size="5" face="Tahoma"><b>BackFileName</b>
+      Property</font></td>
+  </tr>
+</table>
+<p><font size="2" face="Tahoma">Returns/sets the custom <b>Treeview</b>
+control background image Filename.</font></p>
+<p><b><font size="2" face="Tahoma">Syntax</font></b></p>
+<p><font face="Tahoma" size="2"><i>object</i>.<b>Back</b><b>FileName</b> [=<i>value</i>]</font></p>
+<p><font size="2" face="Tahoma">The <b>BackFileName</b> property syntax has these
+parts:</font></p>
+<table border="1" width="99%" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="77">
+  <tr>
+    <th width="11%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Part</font></th>
+    <th width="89%" bordercolor="#FFFFFF" bordercolorlight="#808080" bordercolordark="#FFFFFF" bgcolor="#C0C0C0" align="left" height="16" valign="top"><font size="2" face="Tahoma">Description</font></th>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><i><font size="2" face="Tahoma">object</font></i></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="16" valign="top"><font size="2" face="Tahoma">Required.
+      An object expression that evaluates to an object in the Applies To list.</font></td>
+  </tr>
+  <tr>
+    <td width="11%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><i><font size="2" face="Tahoma">value</font></i></td>
+    <td width="89%" bgcolor="#E2E2E2" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="27" valign="top"><font size="2" face="Tahoma">Required. String expression
+      indicating the name of the file to be loaded.</font></td>
+  </tr>
+</table>
+<p><b><font face="Tahoma" size="2">Remarks</font></b></p>
+<p><font face="Tahoma" size="2">Be sure to pass a valid image filename otherwise
+an error will be raised. When the Filename is passed and <i>object.</i><b>BackMode</b>
+= vbGraphic, the image will be automatically loaded and displayed.</font></p>
+<p><b><font face="Tahoma" size="2">Data Type</font></b></p>
+<p><font face="Tahoma" size="2"><b>String&nbsp;</b></font></p>
+
+<p><font face="Tahoma" size="2"><b>Example</b></font></p>
+<table border="1" width="98%" bgcolor="#FFFFCC" bordercolorlight="#E2E2E2" bordercolordark="#C0C0C0" cellspacing="0" style="text-indent: 0; margin-left: 10" cellpadding="15">
+  <tr>
+    <td width="100%"><font face="Courier New" size="2">'<br>
+      '## Note: oTree
+      is a reference to the vbTree.cTreeView class<br>
+      '<br>
+      '## Load Graphic Background image from file<br>
+      '<br>
+      With oTree<br>
+      &nbsp;&nbsp;&nbsp; .Backmode = bmGraphic<br>
+      &nbsp;&nbsp;&nbsp; .BackFileName = App.Path + &quot;\TreeBack.Gif&quot;<br>
+      End With</font></td>
+  </tr>
+</table>
+
+</body>
+
+</html>
